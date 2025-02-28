@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: Camera Switcher Udon C# Program Asset
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: f2fe37ee203e3f54f9fe72f2783ee9a7,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 245a93bd3962b8646ac942e8ff8ed86b,
     type: 2}
   udonAssembly: 
   assemblyError: 
