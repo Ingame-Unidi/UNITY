@@ -20,8 +20,8 @@ public class Cube : UdonSharpBehaviour
                 //enterSound.Play();
 
                 // mesh renderer 켜기 (시각화를 위한 코드, 나중에 삭제해도 됨)
-                MeshRenderer curPlayerPos = gameObject.GetComponent<MeshRenderer>();
-                curPlayerPos.enabled = true;
+                //MeshRenderer curPlayerPos = gameObject.GetComponent<MeshRenderer>();
+                //curPlayerPos.enabled = true;
 
                 // 자식 컴포넌트의 setActive 여부로 플레이어의 위치 정보 파악하기
                 transform.GetChild(0).gameObject.SetActive(true);
@@ -39,8 +39,8 @@ public class Cube : UdonSharpBehaviour
             if (player.isLocal)
             {
                 // 단순 시각화용 코드
-                MeshRenderer curPlayerPos = gameObject.GetComponent<MeshRenderer>();
-                curPlayerPos.enabled = false;
+                //MeshRenderer curPlayerPos = gameObject.GetComponent<MeshRenderer>();
+                //curPlayerPos.enabled = false;
 
                 // 자식 컴포넌트의 setActive 여부로 플레이어의 위치 정보 파악하기
                 transform.GetChild(0).gameObject.SetActive(false);
