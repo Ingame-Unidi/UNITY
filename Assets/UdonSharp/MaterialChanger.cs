@@ -55,7 +55,7 @@ public class MaterialChanger : UdonSharpBehaviour
                         Renderer renderer = obj.GetComponent<Renderer>();
                         if (renderer != null)
                         {
-                            renderer.material.SetColor("_EmissionColor", Color.white * Mathf.LinearToGammaSpace(targetIntensity));
+                            renderer.material.SetColor("_EmissionColor", Color.yellow * Mathf.LinearToGammaSpace(targetIntensity));
                         }
                     }
 
@@ -73,7 +73,7 @@ public class MaterialChanger : UdonSharpBehaviour
                         Renderer renderer = obj.GetComponent<Renderer>();
                         if (renderer != null)
                         {
-                            renderer.material.SetColor("_EmissionColor", Color.white * Mathf.LinearToGammaSpace(intensityIncrease));
+                            renderer.material.SetColor("_EmissionColor", Color.yellow * Mathf.LinearToGammaSpace(intensityIncrease));
                         }
                     }
 
@@ -92,7 +92,7 @@ public class MaterialChanger : UdonSharpBehaviour
                         Renderer renderer = obj.GetComponent<Renderer>();
                         if (renderer != null)
                         {
-                            renderer.material.SetColor("_EmissionColor", Color.white * Mathf.LinearToGammaSpace(targetIntensity));
+                            renderer.material.SetColor("_EmissionColor", Color.yellow * Mathf.LinearToGammaSpace(targetIntensity));
                         }
                     }
 
