@@ -74,7 +74,18 @@ public class Road : UdonSharpBehaviour
     // f key 입력 시
     public void FKeyInput()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+
+        bool vrTrigger = false;
+        if (Networking.LocalPlayer != null && Networking.LocalPlayer.IsUserInVR())
+        {
+            float triggerValue = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger");
+            if (triggerValue > 0.75f)
+            {
+                vrTrigger = true;
+            }
+        }
+        
+        if (Input.GetKeyDown(KeyCode.F)||vrTrigger)
         {
             if (isActive.activeSelf)
             {
