@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: RollCameraSwitcher Udon C# Program Asset
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 8ae8b9029c45360459e71fc4426a5b95,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 677ebf2d2d6518f47a4b430eb8f5dd0d,
     type: 2}
   udonAssembly: 
   assemblyError: 
