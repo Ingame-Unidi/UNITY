@@ -17,6 +17,7 @@ public class DriveWay : UdonSharpBehaviour
     // player와 driveway 충돌 확인용 변수
     private bool isPlayerOnDriveWay = false;
 
+
     public override void OnPlayerTriggerEnter(VRCPlayerApi player)
     {
         Debug.Log("Player Enter the DriveWay!");

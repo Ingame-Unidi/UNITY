@@ -10,6 +10,14 @@ public class GameManager : UdonSharpBehaviour
     public GameObject crossRoad_respawnPoint;
     public GameObject uiManager;
 
+    // driveway용 audio
+    public AudioSource driveWayAudio;
+    public AudioSource deadAudio;
+
+    // 리스폰 대기용 타이머
+    // -1이면 대기 상태
+    //private float respawnTime = -1f; 
+
     // 횡단보도에서 player 사망 처리
     public void playerDiedOnCrossRoad()
     {
@@ -17,13 +25,29 @@ public class GameManager : UdonSharpBehaviour
         {
             Debug.Log("Player died");
 
-            // player respawn
-            respawnPlayer();
-
             // 사망 ui 띄우기
             uiManager.GetComponent<UIManager>().ShowDeathUI();
+
+            // 사망 audio 플레이
+            driveWayAudio.Stop();
+            deadAudio.Play();
+
+            // 5초 후 리스폰을 위해 현재 시간 저장
+            //respawnTime = Time.time + 5f;
+            respawnPlayer();
         }
     }
+
+    // n초 뒤 리스폰 기능, 나중에 필요하면 쓰기로
+    //private void Update()
+    //{
+    //    // respawnTime이 설정되었고, 현재 시간이 넘어가면 리스폰 실행
+    //    if (respawnTime > 0 && Time.time >= respawnTime)
+    //    {
+    //        respawnPlayer();
+    //        respawnTime = -1f; // 다시 대기 상태로 설정
+    //    }
+    //}
 
     // player respawn
     public void respawnPlayer()
@@ -32,6 +56,14 @@ public class GameManager : UdonSharpBehaviour
         {
             Debug.Log("Player respawn");
             localPlayer.TeleportTo(crossRoad_respawnPoint.transform.position, crossRoad_respawnPoint.transform.rotation);
+        }
+    }
+
+    private void Update()
+    {
+        if (!deadAudio.isPlaying && !driveWayAudio.isPlaying)
+        {
+            driveWayAudio.Play();
         }
     }
 
