@@ -7,8 +7,14 @@ using VRC.Udon;
 
 public class CrossRoadButton : UdonSharpBehaviour
 {
-    // 차도 오브젝트
+    // 차도 Object
     public GameObject driveWay;
+
+    // driveWay의 배경음
+    public AudioSource driveWayAudio;
+
+    // CrossRoadButton 신호음
+    public AudioSource buttonAudio;
 
     // driveWay 비활성화(= 횡단보도 활성화)까지 기다리는 시간
     private float deactive_waitTime = 6f;
@@ -27,11 +33,12 @@ public class CrossRoadButton : UdonSharpBehaviour
     {
         Debug.Log("CrossRoadButton Clicked!");
 
-        // 안내음 출력
-        GetComponent<AudioSource>().Play();
+        // 횡단보도 배경음 volume down
+        driveWayAudio.volume = 0.05f;
 
-        // 차소리 volume down
-        driveWay.GetComponent<AudioSource>().volume = 0.05f;
+        // 안내음 출력
+        buttonAudio = GetComponent<AudioSource>();
+        buttonAudio.Play();
 
         // update문 내부 함수 동작 시작
         isButtonActive = true;
@@ -75,7 +82,7 @@ public class CrossRoadButton : UdonSharpBehaviour
                 driveWay.transform.GetChild(0).gameObject.SetActive(true);
 
                 // driveWay volume 롤백
-                driveWay.GetComponent<AudioSource>().volume = 0.3f;
+                driveWayAudio.volume = 0.3f;
 
                 isGreen = false;
 

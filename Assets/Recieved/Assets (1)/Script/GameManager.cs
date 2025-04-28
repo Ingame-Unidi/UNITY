@@ -29,7 +29,6 @@ public class GameManager : UdonSharpBehaviour
             uiManager.GetComponent<UIManager>().ShowDeathUI();
 
             // 사망 audio 플레이
-            driveWayAudio.Stop();
             deadAudio.Play();
 
             // 5초 후 리스폰을 위해 현재 시간 저장
@@ -56,14 +55,6 @@ public class GameManager : UdonSharpBehaviour
         {
             Debug.Log("Player respawn");
             localPlayer.TeleportTo(crossRoad_respawnPoint.transform.position, crossRoad_respawnPoint.transform.rotation);
-        }
-    }
-
-    private void Update()
-    {
-        if (!deadAudio.isPlaying && !driveWayAudio.isPlaying)
-        {
-            driveWayAudio.Play();
         }
     }
 

@@ -7,10 +7,11 @@ public class Kickboard : UdonSharpBehaviour
 {
     public GameObject wall;
 
-    // 킥보드의 지정 위치
+    // 킥보드의 초기 위치
     // 해당 위치를 벗어나면 벽이 열림
     public GameObject designated_position;
 
+    public AudioSource moveAudio;
 
     private void OnTriggerExit(Collider other)
     {
@@ -22,10 +23,9 @@ public class Kickboard : UdonSharpBehaviour
         }
     }
 
-
     public override void OnPickup()
     {
-        
+        moveAudio.Play();
     }
 
     public override void OnDrop()
