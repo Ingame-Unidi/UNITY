@@ -14,9 +14,9 @@ public class GameManager : UdonSharpBehaviour
     public AudioSource driveWayAudio;
     public AudioSource deadAudio;
 
-    // 리스폰 대기용 타이머
-    // -1이면 대기 상태
-    //private float respawnTime = -1f; 
+    // button line색 변경용 param
+    public GameObject crossRoad_button_line;
+    public GameObject elevator_button_line;
 
     // 횡단보도에서 player 사망 처리
     public void playerDiedOnCrossRoad()
@@ -72,5 +72,8 @@ public class GameManager : UdonSharpBehaviour
         {
             Debug.Log("LocalPlayer not found.");
         }
+
+        crossRoad_button_line.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green * Mathf.LinearToGammaSpace(500));
+        elevator_button_line.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green * Mathf.LinearToGammaSpace(500));
     }
 }

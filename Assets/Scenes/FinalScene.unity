@@ -974,6 +974,12 @@ MonoBehaviour:
   VolumetricRadius: 0
   EnableSpatialization: 1
   UseAudioSourceVolumeCurve: 0
+--- !u!4 &592288020 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 453262929078403727, guid: 1e4c33146256435489ff0f39e6174a40,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111608617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &602289776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8561218647125198184, guid: dcdb40399db2ba7488d25b00cdb32822,
@@ -2152,12 +2158,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 720157774}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1208395297 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7054762540475699843, guid: 1e4c33146256435489ff0f39e6174a40,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111608617}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1208483615 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4412442188942721089, guid: d30bf35822c4e2147aaf27f9c9eb40c4,
@@ -2358,6 +2358,26 @@ PrefabInstance:
         type: 3}
       propertyPath: MaxDistance
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199645883808968568, guid: 9e41dadd623f9844589d1c67b923fcae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f71ae941ac207a3439f66681d65ebea8, type: 2}
+    - target: {fileID: 1491941766184424993, guid: 9e41dadd623f9844589d1c67b923fcae,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.824
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491941766184424993, guid: 9e41dadd623f9844589d1c67b923fcae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.776
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491941766184424993, guid: 9e41dadd623f9844589d1c67b923fcae,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.948
       objectReference: {fileID: 0}
     - target: {fileID: 5241814932808564752, guid: 9e41dadd623f9844589d1c67b923fcae,
         type: 3}
@@ -2772,7 +2792,7 @@ PrefabInstance:
     - target: {fileID: 1824648320512302223, guid: 6426db4ecf7a4ad4994a5a72fb5cf99a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 1824648320512302223, guid: 6426db4ecf7a4ad4994a5a72fb5cf99a,
         type: 3}
@@ -2782,8 +2802,13 @@ PrefabInstance:
     - target: {fileID: 1824648320512302223, guid: 6426db4ecf7a4ad4994a5a72fb5cf99a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.006
       objectReference: {fileID: 0}
+    - target: {fileID: 4065596647939331962, guid: 6426db4ecf7a4ad4994a5a72fb5cf99a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f71ae941ac207a3439f66681d65ebea8, type: 2}
     - target: {fileID: 4500169096308245565, guid: 6426db4ecf7a4ad4994a5a72fb5cf99a,
         type: 3}
       propertyPath: Spatialize
@@ -3106,6 +3131,21 @@ PrefabInstance:
       propertyPath: driveWayAudio
       value: 
       objectReference: {fileID: 1299377690}
+    - target: {fileID: 8972116593811901147, guid: 7f55c80014b9a654ba35289df3522cb7,
+        type: 3}
+      propertyPath: elevator_button
+      value: 
+      objectReference: {fileID: 1845835537}
+    - target: {fileID: 8972116593811901147, guid: 7f55c80014b9a654ba35289df3522cb7,
+        type: 3}
+      propertyPath: elevator_button_line
+      value: 
+      objectReference: {fileID: 1845835537}
+    - target: {fileID: 8972116593811901147, guid: 7f55c80014b9a654ba35289df3522cb7,
+        type: 3}
+      propertyPath: crossRoad_button_line
+      value: 
+      objectReference: {fileID: 1991975776}
     - target: {fileID: 8972116593811901147, guid: 7f55c80014b9a654ba35289df3522cb7,
         type: 3}
       propertyPath: crossRoad_respawnPoint
@@ -3473,6 +3513,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7025265267204321628}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1845835537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7782310489256424887, guid: 6426db4ecf7a4ad4994a5a72fb5cf99a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1418612351}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1869733139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8206866675876731679, guid: d30bf35822c4e2147aaf27f9c9eb40c4,
@@ -3545,6 +3591,12 @@ MonoBehaviour:
   VolumetricRadius: 0
   EnableSpatialization: 1
   UseAudioSourceVolumeCurve: 0
+--- !u!1 &1991975776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7875167511860265483, guid: 9e41dadd623f9844589d1c67b923fcae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299377688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2031786794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1663309425503840952, guid: d30bf35822c4e2147aaf27f9c9eb40c4,
@@ -6976,7 +7028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawns:
-  - {fileID: 1208395297}
+  - {fileID: 592288020}
   spawnOrder: 2
   spawnOrientation: 0
   ReferenceCamera: {fileID: 1158493034}
