@@ -2322,7 +2322,7 @@ PrefabInstance:
     - target: {fileID: 759799460701808216, guid: 9e41dadd623f9844589d1c67b923fcae,
         type: 3}
       propertyPath: m_Volume
-      value: 0.8
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 759799460701808216, guid: 9e41dadd623f9844589d1c67b923fcae,
         type: 3}
@@ -2347,7 +2347,7 @@ PrefabInstance:
     - target: {fileID: 890743859093627049, guid: 9e41dadd623f9844589d1c67b923fcae,
         type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 890743859093627049, guid: 9e41dadd623f9844589d1c67b923fcae,
         type: 3}
@@ -3318,7 +3318,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 48c6de9c8a7446042be8d74015c73204, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.08
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7055,24 +7055,15 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 2100000, guid: e3d620c2f12e6dc4daddb6fca3629539, type: 2}
-  - {fileID: 2100000, guid: 5c5fe65ef38a4e2438ba193411774b67, type: 2}
+  - {fileID: 2100000, guid: a98594435549aa548bbd149c38da8eec, type: 2}
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 2100000, guid: f71ae941ac207a3439f66681d65ebea8, type: 2}
-  - {fileID: 390423634207928920, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: -3522955778539423533, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
+  - {fileID: -6087771358165109452, guid: b95c1f7ebf80db34ebcb0ca37b02dc7f, type: 3}
+  - {fileID: 6699446615349125189, guid: b95c1f7ebf80db34ebcb0ca37b02dc7f, type: 3}
+  - {fileID: 2100000, guid: 5c5fe65ef38a4e2438ba193411774b67, type: 2}
   - {fileID: -6478536213147159724, guid: b95c1f7ebf80db34ebcb0ca37b02dc7f, type: 3}
-  - {fileID: -6478536213147159724, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: 6699446615349125189, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: -3846018093981099296, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: 4226610838482514310, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: 9185737683893222716, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: -6922793697723135513, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: -876546973899608171, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: -6087771358165109452, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: -2813467912831258332, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: 4874126678125670354, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
-  - {fileID: -8274133419916619345, guid: a71744360bc25b242adaa2020a4a2ada, type: 3}
+  - {fileID: -6922793697723135513, guid: b95c1f7ebf80db34ebcb0ca37b02dc7f, type: 3}
+  - {fileID: -876546973899608171, guid: b95c1f7ebf80db34ebcb0ca37b02dc7f, type: 3}
+  - {fileID: 2100000, guid: e3d620c2f12e6dc4daddb6fca3629539, type: 2}
   LightMapsNear: []
   LightMapsFar: []
   LightMode: 0
